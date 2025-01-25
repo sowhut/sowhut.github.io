@@ -7,8 +7,15 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    AAlert: typeof import('ant-design-vue/es')['Alert']
+    ABreadcrumb: typeof import('ant-design-vue/es')['Breadcrumb']
+    AButton: typeof import('ant-design-vue/es')['Button']
     ADivider: typeof import('ant-design-vue/es')['Divider']
+    AFlex: typeof import('ant-design-vue/es')['Flex']
     APageHeader: typeof import('ant-design-vue/es')['PageHeader']
+    ASpace: typeof import('ant-design-vue/es')['Space']
+    ATag: typeof import('ant-design-vue/es')['Tag']
+    ATypographyText: typeof import('ant-design-vue/es')['TypographyText']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }
