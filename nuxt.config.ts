@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
   ssr: false, // 替代原来的 target: 'static'
   app: {
-    baseURL: '/sowhut.github.io/',  // 替代原来的 router.base
+    baseURL: '/',  // 替代原来的 router.base
     head: {
       title: 'sowhut.github.io',
       htmlAttrs: {
