@@ -3,9 +3,10 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { defineNuxtComponent } from '#imports'
 
-export default Vue.extend({
-  name: 'IndexPage',
+// Using Vue 3 syntax
+export default defineNuxtComponent({
+  name: 'IndexPage'
 })
 </script>
