@@ -1,45 +1,27 @@
-export default {
-    // Target: https://go.nuxtjs.dev/config-target
-    target: 'static',
-  
-    router: {
-      base: '/sowhut.github.io/'
-    },
-  
-    // Global page headers: https://go.nuxtjs.dev/config-head
+import { defineNuxtConfig } from 'nuxt/config'
+  // nuxt.config.ts
+export default defineNuxtConfig({
+  ssr: false, // 替代原来的 target: 'static'
+  app: {
+    baseURL: '/sowhut.github.io/',  // 替代原来的 router.base
     head: {
       title: 'sowhut.github.io',
       htmlAttrs: {
-        lang: 'en',
+        lang: 'en'
       },
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: '' },
-        { name: 'format-detection', content: 'telephone=no' },
+        { name: 'description', content: '' },
+        { name: 'format-detection', content: 'telephone=no' }
       ],
-      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    },
-  
-    // Global CSS: https://go.nuxtjs.dev/config-css
-    css: ['ant-design-vue/dist/reset.css'],
-  
-    // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-    plugins: ['@/plugins/antd-ui'],
-  
-    // Auto import components: https://go.nuxtjs.dev/config-components
-    components: true,
-  
-    // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-    buildModules: [
-      // https://go.nuxtjs.dev/typescript
-      '@nuxt/typescript-build',
-    ],
-  
-    // Modules: https://go.nuxtjs.dev/config-modules
-    modules: [],
-  
-    // Build Configuration: https://go.nuxtjs.dev/config-build
-    build: {},
-  }
-  
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    }
+  },
+  css: ['ant-design-vue/dist/reset.css'],
+  modules: [
+    // 在这里添加需要的模块
+  ],
+  components: true,
+  build: {}
+})

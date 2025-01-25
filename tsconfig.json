@@ -13,7 +13,8 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./*"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "#imports": [".nuxt/imports.d.ts"]
     },
     "types": ["@nuxt/types", "@types/node"]
   },
