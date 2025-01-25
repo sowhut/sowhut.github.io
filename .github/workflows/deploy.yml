@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+permissions:
+  contents: write # 添加这行来授予写入权限
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
