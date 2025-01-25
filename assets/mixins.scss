@@ -1,0 +1,12 @@
+/**
+* flex
+* @param {justify} justify-content: flex-start | flex-end | center | space-between | space-around 
+* @param {align} align-items: flex-start | flex-end | center | baseline | stretch
+* @param {direction} flex-direction: row | row-reverse | column | column-reverse
+*/
+@mixin flex($justify: center, $align: center, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
