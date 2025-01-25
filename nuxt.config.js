@@ -34,6 +34,7 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/typescript
     '@nuxt/typescript-build',
+    '@nuxtjs/antd'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -41,4 +42,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // 任何 Ant Design Vue 的配置
+  antd: {}
 }
