@@ -1,4 +1,6 @@
 import { defineNuxtConfig } from 'nuxt/config'
+import Components from 'unplugin-vue-components/vite';
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers'
   // nuxt.config.ts
 export default defineNuxtConfig({
   // 替代原来的 target: 'static'
@@ -31,6 +33,13 @@ export default defineNuxtConfig({
   build: {},
 
   vite: {
+    plugins: [
+      Components({
+        resolvers: [AntDesignVueResolver({
+          importStyle: false,
+        })],
+      }),
+    ],
     css: {
       preprocessorOptions: {
         scss: {
@@ -39,4 +48,6 @@ export default defineNuxtConfig({
       }
     }
   },
+
+  compatibilityDate: '2025-01-25',
 })
