@@ -11,6 +11,8 @@
   height: 100vh;
   overflow-y: auto;
   section {
+    @include flex(flex-start, center, column);
+    width: 100%;
     padding: 20px;
   }
   code {
