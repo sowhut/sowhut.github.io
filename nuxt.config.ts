@@ -26,7 +26,7 @@ export default defineNuxtConfig({
   css: ['ant-design-vue/dist/reset.css'],
 
   modules: [
-    // 在这里添加需要的模块
+    '@nuxtjs/tailwindcss'
   ],
 
   components: true,
@@ -43,7 +43,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/styles/mixins.scss" as *;'
+          additionalData: '@use "~/assets/css/mixins.scss" as *;'
         }
       }
     }

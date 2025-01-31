@@ -42,7 +42,7 @@ const updateVisibleItems = () => {
     const newStartIndex = Math.floor(scrollTop / itemHeight)
     const visibleCount = Math.ceil(containerHeight / itemHeight)
     startIndex.value = newStartIndex
-    visibleItems.value = items.slice(newStartIndex, newStartIndex + visibleCount)
+    visibleItems.value = items.slice(newStartIndex, newStartIndex + visibleCount + 1)
   }
 }
 
@@ -61,12 +61,12 @@ onUnmounted(() => {
   position: relative;
   max-width: 100%;
   width: 400px;
-  height: 500px;
+  height: 402px;
   overflow-y: auto;
   border: 1px solid #e0e0e0;
   .virtual-list-item {
     @include flex;
-    border: 1px solid #ddd;
+    border: 1px dashed #ddd;
   }
 }
 </style>

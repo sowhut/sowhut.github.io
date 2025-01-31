@@ -1,8 +1,16 @@
 <template>
-  <div class="global-wrap">
+  <div ref="scrollRef" class="global-wrap">
     <NuxtPage />
   </div>
 </template>
+
+<script setup lang="ts">
+import { ref, provide } from 'vue'
+
+const scrollRef = ref(null)
+
+provide('scrollRef', scrollRef)
+</script>
 
 <style lang="scss">
 .global-wrap {
@@ -24,6 +32,10 @@
     background: rgba(150, 150, 150, 0.1);
     border: 1px solid rgba(100, 100, 100, 0.2);
     border-radius: 3px;
+  }
+
+  .ant-divider {
+    margin: 24px 0 0;
   }
 }
 </style>

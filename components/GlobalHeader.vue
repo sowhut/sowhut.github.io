@@ -6,7 +6,7 @@
     style="width: 100%;"
   >
     <template #breadcrumb>
-      <a-breadcrumb :routes="routes">
+      <a-breadcrumb :routes="routes" style="padding: 0 2px;">
         <template #itemRender="{ route }">
           <span v-if="routes.indexOf(route) === routes.length - 1">{{ route.breadcrumbName }}</span>
           <NuxtLink v-else :to="route.path">{{ route.breadcrumbName }}</NuxtLink>

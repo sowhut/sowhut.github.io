@@ -9,11 +9,15 @@
       <a-tag color="#3FB883">Vue@3.5.13</a-tag>
       <a-tag color="#55acee">Ant Design Vue@3.2.6</a-tag>
       <a-tag color="#3077C6">Typescript</a-tag>
+      <a-tag color="#0BA5E9">Tailwindcss</a-tag>
     </a-space>
   </section>
   
   <!-- 展示Router的各种用法 -->
   <IndexRouters />
+
+  <!-- 视差滚动效果 -->
+  <!-- <IndexParallax /> -->
 
   <!-- 性能优化展示 -->
   <IndexPerformance />
@@ -23,6 +27,7 @@
 <script lang="ts" setup>
 import GlobalHeader from '@/components/GlobalHeader.vue'
 import IndexRouters from '@/components/IndexRouters.vue'
+// import IndexParallax from '@/components/IndexParallax.vue'
 import IndexPerformance from '@/components/IndexPerformance.vue'
 
 </script>
